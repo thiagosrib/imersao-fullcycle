@@ -21,6 +21,7 @@ func main() {
 	// // para enviar msg, é utilizado o códito abaido
 	// // para ficar lendo a msg pelo console do kafka, entrar no container do kafka (kafka-kafka-1) e digita: 
 	// //     kafka-console-consumer --bootstrap-server=localhost:9092 --topic=route.new-direction
+	// //     kafka-console-consumer --bootstrap-server=localhost:9092 --topic=route.new-position --group=terminal
 	// producer := kafka.NewKafkaProducer()
 	// kafka.Publish("ola", "route.new-direction", producer)
 
