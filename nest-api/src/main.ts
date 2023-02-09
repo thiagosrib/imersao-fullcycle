@@ -22,7 +22,7 @@ async function bootstrap() {
     },
   });
 
-  await app.startAllMicroservices();
+  await app.startAllMicroservicesAsync();
   await app.listen(3000);
 
   console.log('app are running on port 3000');

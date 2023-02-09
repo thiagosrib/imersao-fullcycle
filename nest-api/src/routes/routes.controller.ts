@@ -25,7 +25,7 @@ export class RoutesController implements OnModuleInit {
     @Inject('KAFKA_SERVICE')
     private kafkaClient: ClientKafka,
     private routeGateway: RoutesGateway,
-  ) {}
+  ) { }
 
   @Post()
   create(@Body() createRouteDto: CreateRouteDto) {
@@ -81,6 +81,7 @@ export class RoutesController implements OnModuleInit {
       };
     },
   ) {
+    console.log('message', message.value);
     this.routeGateway.sendPosition(message.value);
   }
 }
